@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo Nacional de Población y Vivienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1>Censo Nacional de Población y Vivienda</h1>
+            <h2>Resultados del Departamento de El Progreso</h2>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <label for="municipios" class="form-label">Selecciona un municipio:</label>
+                <select class="form-select" id="municipios" onchange="cargarDatosMunicipio()">
+                    <option value="999">El Progreso</option>
+                    <option value="201">Guastatoya</option>
+                    <option value="202">Morazán</option>
+                    <option value="203">San Agustín Acasaguastlán</option>
+                    <option value="204">San Cristóbal Acasaguastlán</option>
+                    <option value="205">El Jícaro</option>
+                    <option value="206">Sansare</option>
+                    <option value="207">Sanarate</option>
+                    <option value="208">San Antonio La Paz</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="resultados" class="p-3 border bg-light">
+                    <!-- Aquí se cargarán los datos del municipio seleccionado -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ajax.js"></script>
+</body>
+</html>
